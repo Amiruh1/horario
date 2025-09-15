@@ -236,7 +236,7 @@
                   document.getElementById('successMessage').textContent = 'Horario guardado';
           
                   // 🔹 Mostrar la alerta de éxito como con curso agregado
-                  showAlert('successAlert');
+                    showAlert('successAlert', 'Horario guardado');
                 });
             }
             
@@ -257,6 +257,7 @@
             // Renderizar cursos al cargar la página
             renderCourses();
         });
+
 
 
 
