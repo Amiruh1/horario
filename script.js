@@ -232,7 +232,11 @@
                  localStorage.setItem('courses', JSON.stringify(courses));
                  renderCourses();
 
-                 showAlert('successAlert', 'Horario guardado y limpiado correctamente');
+                 // 🔹 Cambiar el texto del success antes de mostrar
+                  document.getElementById('successMessage').textContent = 'Horario guardado';
+          
+                  // 🔹 Mostrar la alerta de éxito como con curso agregado
+                  showAlert('successAlert');
                 });
             }
             
@@ -253,5 +257,6 @@
             // Renderizar cursos al cargar la página
             renderCourses();
         });
+
 
 
