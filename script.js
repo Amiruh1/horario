@@ -228,6 +228,7 @@
                     link.download = 'mi-horario.jpg';
                     link.href = canvas.toDataURL('image/jpeg', 0.9);
                     link.click();
+                 clearAllCourses();
                 });
             }
             
@@ -248,3 +249,4 @@
             // Renderizar cursos al cargar la página
             renderCourses();
         });
+
