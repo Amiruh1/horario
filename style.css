@@ -1,0 +1,181 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f5f7fa;
+            padding: 10px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+        }
+        h1 {
+            color: #000000;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .schedule {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+            table-layout: fixed;
+        }
+        .schedule th, .schedule td {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .schedule th {
+            background-color: #326485;
+            color: white;
+            font-weight: 600;
+        }
+        .saturday-header {
+            background-color: #326485 !important;
+        }
+        .time-column {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            width: 80px;
+        }
+        .course-slot {
+            min-height: 70px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .course-slot:hover {
+            background-color: #f1f8ff;
+        }
+        .course-item {
+            padding: 8px;
+            border-radius: 6px;
+            color: white;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+        }
+        .delete-btn {
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            width: 28px;
+            height: 28px;
+            font-size: 16px;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+        .delete-btn:hover {
+            background: rgba(255, 0, 0, 0.7);
+            transform: scale(1.1);
+        }
+        .form-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .btn-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .time-header {
+            background-color: #2c3e50;
+        }
+        .empty-slot {
+            color: #adb5bd;
+            font-style: italic;
+            font-size: 0.85rem;
+        }
+        .course-info {
+            text-align: center;
+            padding: 5px;
+        }
+        .course-time {
+            font-size: 0.8em;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+        .course-name {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        .course-details {
+            font-size: 0.75em;
+            opacity: 0.9;
+        }
+        .evening-row {
+            background-color: #f8f9fa;
+        }
+        .night-time {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .time-inputs {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+        .time-separator {
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        .hour-select, .minute-select {
+            width: 80px;
+        }
+        .schedule-container {
+            max-height: 70vh;
+            overflow-y: auto;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+        /* Ajustar el ancho de las columnas de los días */
+        .schedule th:nth-child(2),
+        .schedule th:nth-child(3),
+        .schedule th:nth-child(4),
+        .schedule th:nth-child(5),
+        .schedule th:nth-child(6),
+        .schedule th:nth-child(7) {
+            width: 14%;
+        }
+        .form-control-color {
+            height: 38px;
+        }
+        .alert {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        .hidden-cell {
+            display: none;
+        }
